@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bank application client</title>
+    </head>
+    <body>
+        <div>
+            Logged as: {{user}}
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            <label id="for_login">
+                Name:
+                <input id="for_name" type="text" maxlength="25" name="login" required>
+            </label>
+            <label id="for_password">
+                <input id="for_password" type="password" maxlength="25" name="password" required>
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+        <div style="width:100%; height:50px;"></div>
+        <h2>
+            {{ deptitle }}
+        </h2>
+        <div>
+            {% for dep in deposits %}
+                <div>{{dep|linebreaks}}</div>
+            {% endfor %}
+        </div>
+        <h2>
+            {{ cretitle }}
+        </h2>
+        <div>
+            {% for cre in credits %}
+                <div>{{cre|linebreaks}}</div>
+            {% endfor %}
+        </div>
+    </body> 
+</html>
