@@ -1,6 +1,6 @@
-Kacper Szczepański
+#Security of computer systems
 
-Mała aplikacja bankowa, w której klienci (po zalogowaniu przy użyciu PAM) widzą tylko swoje pliki, podczas gdy pracownicy mają dostęp do wszystkich i jako jedyni mogą je edytować.
+Mała aplikacja bankowa, w której klienci (po zalogowaniu przy użyciu PAM) widzą tylko swoje pliki, podczas gdy pracownicy mają dostęp do wszystkich i jako jedyni mogą je edytować. (December 2021)
 
 Zaczynając od naprostszych rzeczy:
 
